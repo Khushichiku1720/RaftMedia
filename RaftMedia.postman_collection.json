@@ -1,0 +1,691 @@
+{
+	"info": {
+		"_postman_id": "c2f2d5fa-fc74-4c6c-9ce7-9e498efd267e",
+		"name": "RaftMedia",
+		"description": "This API is build to perform CRUD operation. We are keeping course details here and can perform all operation with the help of different API's.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26264965"
+	},
+	"item": [
+		{
+			"name": "All_Courses",
+			"item": [
+				{
+					"name": "http://localhost:3000/route/courses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4NzA0OTk2LCJleHAiOjE2Nzg5NDQ5OTZ9.f7ccaL9x3CKpgda34Hr4wy3oVVmeeJCzI7VKEE8S6uo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\":\"Introduction to java\",\"content\":\"java is object oriented language\",\"videos\":34,\"active\":true}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/route/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"route",
+								"courses"
+							]
+						},
+						"description": "This API is for getting all the courses details which are stored in database"
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/route/courses",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4OTEyNjM1LCJleHAiOjE2Nzg5MTQ2MzV9.rMcQf5dReWgHUHFrAzAnG-EmXSYgveRjlZhOMl6PEIM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"title\":\"Introduction to java\",\"content\":\"java is object oriented language\",\"videos\":34,\"active\":true}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/route/courses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"route",
+										"courses"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1074"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"432-Sf6FeVr46pdnPQcfh/2GUnXB/UQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Mar 2023 20:41:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"640f1c0de5dc4f70aaf96a61\",\n        \"title\": \"Introduction to javascript\",\n        \"content\": \"javaScript is object Based language\",\n        \"videos\": 16,\n        \"active\": true,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"640f207cc747798c5c80a063\",\n        \"title\": \"Introduction to express.js\",\n        \"content\": \"express.js is framework of nodejs\",\n        \"videos\": 15,\n        \"active\": true\n    },\n    {\n        \"_id\": \"640f2633e5dc4f70aaf96a6a\",\n        \"title\": \"Introduction to java\",\n        \"content\": \"java is object oriented language\",\n        \"videos\": 34,\n        \"active\": true,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64117296c0b23336bfd77174\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"641172f9c0b23336bfd77176\",\n        \"title\": \"Introduction to MongoDB\",\n        \"content\": \"MongoDB is noSQL DBMS\",\n        \"videos\": 20,\n        \"active\": true,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64118031d7edbb12f3eb665a\",\n        \"title\": \"Introduction to MongoDB\",\n        \"content\": \"MongoDB is noSQL DB query language\",\n        \"videos\": 20,\n        \"active\": true,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64122ca6da35466adc12e0f4\",\n        \"title\": \"Introduction to MongoDB\",\n        \"content\": \"MongoDB is noSQL DB query language\",\n        \"videos\": 20,\n        \"active\": true,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64122cb0da35466adc12e0f6\",\n        \"title\": \"Introduction to MongoDB\",\n        \"content\": \"MongoDB is noSQL DB query language\",\n        \"videos\": 20,\n        \"active\": true,\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "To_Generate_Token",
+			"item": [
+				{
+					"name": "http://localhost:3000/login/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4ODU5Mzc2LCJleHAiOjE2Nzg4NTk2NzZ9.Dtm_mj9g_Gjom-Go7mNewtlwuVCkLZB7C0wo15rHmqM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/login/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login",
+								""
+							]
+						},
+						"description": "To generate new token"
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/login/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4ODU5Mzc2LCJleHAiOjE2Nzg4NTk2NzZ9.Dtm_mj9g_Gjom-Go7mNewtlwuVCkLZB7C0wo15rHmqM",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/login/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "221"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"dd-Ts38yWdzhYITcKEfcJNpAZb5G8E\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Mar 2023 04:49:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4OTQyMTk0LCJleHAiOjE2Nzg5NDQxOTR9.DexB4UEEBjyi-0Ty2bKJsLxwdEUU3c1GvmMPXz0eNwY\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "To_Login",
+			"item": [
+				{
+					"name": "http://localhost:3000/login/profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4ODYxMzUxLCJleHAiOjE2Nzg4NjE2NTF9._fMDcWfh5tU-jSGtaAZjkLKfluD4_Z-t3BVFfQYK1n0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/login/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/login/profile",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4OTQyMTk0LCJleHAiOjE2Nzg5NDQxOTR9.DexB4UEEBjyi-0Ty2bKJsLxwdEUU3c1GvmMPXz0eNwY",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/login/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"login",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e-0KUWfjygaf5sen7VvFqSmrRKEro\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Mar 2023 04:50:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Profile Accessed\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Specific_course",
+			"item": [
+				{
+					"name": "http://localhost:3000/route/courses/640f1c0de5dc4f70aaf96a61",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/route/courses/640f1c0de5dc4f70aaf96a61",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"route",
+								"courses",
+								"640f1c0de5dc4f70aaf96a61"
+							]
+						},
+						"description": "To get specific course based on courseID"
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/route/courses/640f1c0de5dc4f70aaf96a61",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4OTQyMTk0LCJleHAiOjE2Nzg5NDQxOTR9.DexB4UEEBjyi-0Ty2bKJsLxwdEUU3c1GvmMPXz0eNwY",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/route/courses/640f1c0de5dc4f70aaf96a61",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"route",
+										"courses",
+										"640f1c0de5dc4f70aaf96a61"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "155"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9b-VZkMA3PK9mdRpcqDhPEsVkdyr+8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Mar 2023 04:50:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"640f1c0de5dc4f70aaf96a61\",\n        \"title\": \"Introduction to javascript\",\n        \"content\": \"javaScript is object Based language\",\n        \"videos\": 16,\n        \"active\": true,\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "To_Add_NewCourse",
+			"item": [
+				{
+					"name": "http://localhost:3000/route/add_course",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Introduction to MongoDB\",\r\n     \"content\":\"MongoDB is noSQL DB query language\",\r\n     \"videos\":20,\r\n     \"active\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/route/add_course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"route",
+								"add_course"
+							]
+						},
+						"description": "To add new course details"
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/route/add_course",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4OTQyMTk0LCJleHAiOjE2Nzg5NDQxOTR9.DexB4UEEBjyi-0Ty2bKJsLxwdEUU3c1GvmMPXz0eNwY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"Introduction to Python\",\r\n     \"content\":\"Python is easy to learn programming language\",\r\n     \"videos\":30,\r\n     \"active\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/route/add_course",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"route",
+										"add_course"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Mar 2023 04:51:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "To_Delete_Course",
+			"item": [
+				{
+					"name": "http://localhost:3000/route/delete/640da5dfb3bbbc7c466a9ce0",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/route/delete/640da5dfb3bbbc7c466a9ce0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"route",
+								"delete",
+								"640da5dfb3bbbc7c466a9ce0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/route/delete/640da5dfb3bbbc7c466a9ce0",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4OTQyMTk0LCJleHAiOjE2Nzg5NDQxOTR9.DexB4UEEBjyi-0Ty2bKJsLxwdEUU3c1GvmMPXz0eNwY",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/route/delete/64117296c0b23336bfd77174",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"route",
+										"delete",
+										"64117296c0b23336bfd77174"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22-oOJrBJyyGFYVIpRp+CKZEFg6p8Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Mar 2023 04:52:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "To_Update",
+			"item": [
+				{
+					"name": "http://localhost:3000/route/update/640da5dfb3bbbc7c466a9ce0",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Introduction to SQL\",\r\n     \"content\":\"SQL is DataBase query language\",\r\n     \"videos\":20,\r\n     \"active\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/route/update/640da5dfb3bbbc7c466a9ce0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"route",
+								"update",
+								"640da5dfb3bbbc7c466a9ce0"
+							]
+						},
+						"description": "To update any course details"
+					},
+					"response": [
+						{
+							"name": "http://localhost:3000/route/update/640da5dfb3bbbc7c466a9ce0",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImtodXNoYm9vIiwiZW1haWwiOiJhYmNAdGVzdC5jb20ifSwiaWF0IjoxNjc4OTQyMTk0LCJleHAiOjE2Nzg5NDQxOTR9.DexB4UEEBjyi-0Ty2bKJsLxwdEUU3c1GvmMPXz0eNwY",
+										"description": "Bearer",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"Introduction to Angular\",\r\n     \"content\":\"Angular is popular frontend framework\",\r\n     \"videos\":20,\r\n     \"active\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/route/update/641172f9c0b23336bfd77176",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"route",
+										"update",
+										"641172f9c0b23336bfd77176"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29-sN6aMr1owvt16IDQqfD5Zlo5A3Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Mar 2023 04:55:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,5 +1,8 @@
-FROM amazoncorretto:11
-VOLUME /tmp
-ADD target/url-shortener-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["nodejs", "mongodb://0.0.0.0:27017", "-jar","/app.jar"]
+FROM node:alpine
+WORKDIR/app
+COPY package.json./
+COPY package-lock.json./
+COPY ././
+RUN npm i
+EXPOSE 3000
+CMD["npm", "run","start"]

@@ -4,10 +4,14 @@
 1. You should have mongoDB instance running on your machine.
 2. You should have node.js installed on the machine.
 
-# Steps to run:
-1. Git clone the project to your local.
-2. Change directory to project root.
-3. Open the project in any IDE and use command npm install
-4. Run the project using npm run start.
+Steps to run:- 
+
+1. Open terminal 
+2. Run docker build -t courses
+3. Run docker-compose build
+4. Run docker-compose up -d [To run all the services in detached mode]
+5. Launch the application: http://localhost:3000
+
+
 # Below is the link of APIs Documentation:
    ..... https://documenter.getpostman.com/view/26264965/2s93Jxq1YT

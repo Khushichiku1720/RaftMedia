@@ -1,18 +1,23 @@
-version: "3.9"
-services:
-       login-app:
-           container_name: login-app
-           image: latest123/login-app
-           restart: always
-           build: .
-           ports:
-             - "3000:7500"
-           links:
-             - mongo
-       mongo:
-             container_name: mongo
-             image: mongo
-             volumes:
-               - ./data:/data/db
-             ports:
-               - '27018:27017'
+courses:
+    build: .
+    restart: on-failure
+    ports:
+      - <3000>:<3000>
+    container_name: courses
+    depends_on:
+      - mongoapp
+    networks:
+      - shared-net
+      
+  mongoapp:
+    image: mongo:4.4.3
+    container_name: mongoapp
+    restart: on-failure
+    ports:
+      - 27017:27017
+    networks:
+      - shared-net
+  
+networks:
+  shared-net:
+    driver: bridge

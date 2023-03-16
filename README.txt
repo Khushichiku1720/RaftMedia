@@ -9,5 +9,5 @@
 2. Change directory to project root.
 3. Open the project in any IDE and use command npm install
 4. Run the project using npm run start.
-# Bwlow is the link of APIs Documentation:
+# Below is the link of APIs Documentation:
    ..... https://documenter.getpostman.com/view/26264965/2s93Jxq1YT

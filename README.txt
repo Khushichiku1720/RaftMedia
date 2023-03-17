@@ -3,6 +3,7 @@
 # Prerequisite:
 1. You should have mongoDB instance running on your machine.
 2. You should have node.js installed on the machine.
+3. You should have docker agent on your machine.
 
 Steps to run:- 
 

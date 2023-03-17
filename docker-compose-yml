@@ -2,7 +2,7 @@ courses:
     build: .
     restart: on-failure
     ports:
-      - <3000>:<3000>
+        3000:3000
     container_name: courses
     depends_on:
       - mongoapp
